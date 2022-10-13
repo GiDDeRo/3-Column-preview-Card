@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+    font-family: "Lexend Deca", sans-serif;
+}
+main {
+    width: 60rem;
+    height: 30rem;
+    display: flex;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0px 10px 50px rgb(163, 163, 163);
+}
+section {
+    display: grid;
+    place-items: center;
+}
+section > div {
+    display: grid;
+    align-content: space-between;
+    width: 70%;
+    height: 80%;
+    color: hsl(0, 0%, 95%);
+}
+section > div > img {
+    height: 2.2rem;
+}
+section > div > article {
+    display: grid;
+    align-content: space-between;
+    height: fit-content;
+}
+section > div > article > h1 {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    color: hsl(0, 0%, 95%);
+}
+section > div > article > p {
+    margin-top: 1.5rem;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+section > div > button {
+    width: 8rem;
+    height: 2.7rem;
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    border-radius: 2rem;
+    border: 2px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+    font-family: "Lexend Deca", sans-serif;
+}
+section > div > button:hover {
+    background-color: hsl(0, 0%, 95%);
+    font-weight: 500;
+}
+.container1 {
+    background-color: hsl(31, 77%, 52%);
+}
+.container1 button:hover {
+    color: hsl(31, 77%, 52%);
+}
+.container2 {
+    background-color: hsl(184, 100%, 22%);
+}
+.container2 button:hover {
+    color: hsl(184, 100%, 22%);
+}
+.container3 {
+    background-color: hsl(179, 100%, 13%);
+}
+.container3 button:hover {
+    color: hsl(179, 100%, 13%);
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: 
+    center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media (max-width:1000px) {
+    main {
+        width: 90%;
+    }
+}
+@media (max-width:600px) {
+    body {
+        height: 100%;
+    }
+    main {
+        display: grid;
+        height: 60rem;
+        border: 2px solid black;
+        align-items: none;
+        margin: 1rem 0;
+        box-shadow: 0px 15px 25px hsl(0, 0%, 73%);
+    }
+    section > div {
+        display: grid;
+        align-content: space-between;
+        width: 85%;
+        height: 77%;
+        color: hsl(0, 0%, 95%);
+    }
+    section > div > img {
+        height: 2.5rem;
+    }
+    section > div > article {
+        display: grid;
+        align-content: space-between;
+        height: fit-content;
+    }
+    section > div > article > h1 {
+        font-family: "Big Shoulders Display", sans-serif;
+        font-size: 35px;
+    }
+    section > div > article > p {
+        margin-top: .7rem;
+        font-size: 15px;
+        line-height: 23px;
+    }
+    section > div > button {
+        height: 2.5rem;
+        font-size: 12px;
+    }
+    footer {
+        position: relative;
+    }
+}
+@media (max-width:375px) {
+    section > div {
+        width: 80%;
+        height: 70%;
+    }
+    section > div > img {
+        height: 2rem;
+    }
+    section > div > article > h1 {
+        font-size: 25px;
+    }
+    section > div > article > p {
+        margin-top: .7rem;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    section > div > button {
+        width: 6rem;
+        height: 2rem;
+        font-size: 12px;
+    }
+    footer {
+        position: relative;
+    }
+}
+
